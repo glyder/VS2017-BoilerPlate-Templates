@@ -1,0 +1,25 @@
+﻿
+Installs - 
+==========
+	Install-Package Microsoft.EntityFrameworkCore.SqlServer					// EF Core DB Provider 
+	Install-Package Microsoft.EntityFrameworkCore.Tools						// EF Core Tools (execute EF code commands)
+	Install-Package Microsoft.EntityFrameworkCore.SqlServer.Design			
+	
+	Install EF Core Tools for dotnet CLI:
+	======================================
+	Microsoft.EntityFrameworkCore.Tools.DotNet					// execute EF Core commands from .NET Core's CLI (Command Line Interface)
+																// e.g. dotnet ef    - shows CLI command help 
+	 
+	
+Reverse POCO
+=============	
+	Scaffold-DbContext "Data Source=VS28MVAPPSQL1-t;Initial Catalog=VisResTwo;Integrated Security=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+	Scaffold-DbContext [-Connection] [-Provider] [-OutputDir] [-Context] [-Schemas>] [-Tables>] 
+                       [-DataAnnotations] [-Force] [-Project] [-StartupProject] [<CommonParameters>]
+
+	Scaffold-DbContext "Data Source=VS28MVAPPSQL1-t;Initial Catalog=VisResTwo;Integrated Security=True;" 
+						Microsoft.EntityFrameworkCore.SqlServer 
+						-OutputDir Models
+	
+	get-help scaffold-dbcontext –detailed

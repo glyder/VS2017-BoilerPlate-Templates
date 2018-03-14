@@ -1,0 +1,48 @@
+﻿
+http://dapper-tutorial.net/
+
+
+https://www.c-sharpcorner.com/article/asp-net-core-web-api-with-dapper-and-vs-2017/
+
+
+createdatabase DapperTest  
+
+
+Install _Help.sql
+
+
+
+
+Installs
+===========
+Install-Package Microsoft.EntityFrameworkCore.SqlServer	
+	https://github.com/StackExchange/Dapper			
+
+Maybe
+======
+https://github.com/beardeddev/dapper-fluent
+https://github.com/henkmollema/Dapper-FluentMap	  - Instead of ColumnMapping.cs
+
+TODO EXTRA
+===========
+
+http://dapper-tutorial.net/async
+https://codereview.stackexchange.com/questions/58337/using-dapper-net-and-repository-pattern-in-azure-websites
+https://code.msdn.microsoft.com/Dapper-and-Repository-68710cd7
+http://www.gokhan-gokalp.com/en/asp-net-core-serisi-01-dapper-ile-restful-api-tasarlama-ve-azure-app-servicese-deploy/
+https://gist.github.com/jsauve/ffa2f0dc534aee3a3f16
+
+
+Postman
+=========
+
+http://localhost:61676/api/user
+
+POST
+	Headers
+		[{"key":"Content-Type","value":"application/json","description":""}]
+
+	Body -> raw
+	{
+		"UserName" : "George P",
+	}
